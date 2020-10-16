@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Staatliches&display=swap");
+/* font-family: 'PT Sans', sans-serif;
+font-family: 'Staatliches', cursive; */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+i {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.select-off {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c4c4c48a;
+  height: 100vh;
+}
+
+.container {
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.247);
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  width: 660px;
+}
+
+#site-title {
+  font-family: "Staatliches", cursive;
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 38px;
+}
+
+form {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+#site-subtitle {
+  font-family: "PT Sans", sans-serif;
+}
+
+#file-input {
+  display: block;
+}
+
+#max-file {
+  display: block;
+  margin: 10px auto;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: red;
+}
+
+#submit-button {
+  padding: 10px;
+  width: 150px;
+  cursor: pointer;
+}

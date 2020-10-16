@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Metadata</title>
+    <link href="../public/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="site-title">File Metadata Microservice</h1>
+      <form
+        enctype="multipart/form-data"
+        method="POST"
+        action="/api/fileanalyse"
+      >
+        <input id="file-input" type="file" name="file" />
+        <p id="max-file">Max file size 5mb</p>
+        <input id="submit-button" type="submit" value="Upload" />
+      </form>
+    </div>
+  </body>
+  <script>
+    var fileInput = document.getElementById("file-input");
+
+    fileInput.onchange = function () {
+      if (this.files[0].size > 5144576) {
+        alert("Maximum file size exceeded");
+        this.value = "";
+      }
+    };
+  </script>
+</html>
