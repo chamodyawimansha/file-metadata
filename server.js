@@ -34,7 +34,7 @@ app.post("/api/fileanalyse", (req, res) => {
         error: "No file uploaded",
       });
     } else {
-      let file = req.files.file;
+      let file = req.files.upfile;
 
       return res.json({
         name: file.name,
